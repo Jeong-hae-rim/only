@@ -56,7 +56,8 @@ export const ho_data = [
     id: 7,
     src: "https://i.imgur.com/Z6ZHNiB.png",
     title: "기적의 계산법",
-    description: "호이댐이 삽질퍼레이드",
+    description:
+      "하루에 4p씩 호댐온까지 70일이면 총 280p의 동인지 마감이 가능하다. 기적의 동인 마감 계산법은 실현 가능하다는 것을 증명해 보이겠다.",
     label: "호5",
     author: "402",
   },
