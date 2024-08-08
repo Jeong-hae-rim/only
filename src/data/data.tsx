@@ -95,7 +95,7 @@ export const data = [
     author: "튀긴감자, 일이",
   },
   {
-    id: 13,
+    id: 12,
     src: infoCard,
     title: "말랑카우대만이를 호열이가 앙함",
     description: "호열대만 그리고 오열개만 무언가 나옵니다",
@@ -103,7 +103,7 @@ export const data = [
     author: "테디비, 명부(위탁)",
   },
   {
-    id: 14,
+    id: 13,
     src: "https://i.imgur.com/gWKj3P3.png",
     title: "호빵과 만두",
     description: "호열대만 책과 굿즈가 나옵니다",
@@ -111,7 +111,7 @@ export const data = [
     author: "광부, 믕",
   },
   {
-    id: 15,
+    id: 14,
     src: "https://i.imgur.com/15tKlFW.png",
     title: "야 아직이야 일어나",
     description: "일어나 호댐할 시간이다",
@@ -119,7 +119,7 @@ export const data = [
     author: "woosoo, 이레(308)",
   },
   {
-    id: 16,
+    id: 15,
     src: "https://i.imgur.com/dwWxRfJ.jpg",
     title: "어라 대만군? 여기서 뭐해요?",
     description: "호열이와 대만이의 귀여운 굿즈들이 나옵니다",
@@ -127,7 +127,7 @@ export const data = [
     author: "버밀",
   },
   {
-    id: 17,
+    id: 16,
     src: "https://i.imgur.com/gsxq1Bx.png",
     title: "최애의 호댐",
     description:
@@ -136,7 +136,7 @@ export const data = [
     author: "베리, 소금",
   },
   {
-    id: 18,
+    id: 17,
     src: "https://i.imgur.com/k2swzzQ.png",
     title: "진로희망조사서",
     description: '양호열 "되면 하자" 정대만 "하면 된다"',
@@ -144,7 +144,7 @@ export const data = [
     author: "베아리, tansan",
   },
   {
-    id: 19,
+    id: 18,
     src: infoCard,
     title: "양호열 양아치라서",
     description:
@@ -153,7 +153,7 @@ export const data = [
     author: "진삼, 짜긍이",
   },
   {
-    id: 20,
+    id: 19,
     src: "https://i.imgur.com/1VGafyG.png",
     title: "한 대 팍! 치면서 대만군, 나 니꺼하면 안되냐?",
     description: "아무튼 힘을 냄",
@@ -161,7 +161,7 @@ export const data = [
     author: "이름, 조포진",
   },
   {
-    id: 21,
+    id: 20,
     src: "https://i.imgur.com/hwvfwDp.png",
     title: "난 호댐으로 유학까지 다녀왔단 사실",
     description: "싱싱한 회지 굿즈",
@@ -169,7 +169,7 @@ export const data = [
     author: "자승, 🍳",
   },
   {
-    id: 22,
+    id: 21,
     src: infoCard,
     title: "[호]열이 [댐]배피던 시절",
     description: "호열이랑 대만이가 옥상에서...",
@@ -177,7 +177,7 @@ export const data = [
     author: "쁑",
   },
   {
-    id: 23,
+    id: 22,
     src: "https://i.imgur.com/vusEAA8.png",
     title: "찹쌀호댐 말랑분점",
     description: "토끼가 다소 함유된 잡다한 호댐 무언가가 있을 예정입니다",
@@ -185,7 +185,7 @@ export const data = [
     author: "malang-basak",
   },
   {
-    id: 24,
+    id: 23,
     src: infoCard,
     title: "化洋戀火",
     description: "호댐 신간, 굿즈 나옵니다",
@@ -193,7 +193,7 @@ export const data = [
     author: "과죽, 호열이엄마, 팡(위탁)",
   },
   {
-    id: 25,
+    id: 24,
     src: "https://i.imgur.com/hWSd9JW.jpg",
     title: "양호열아 일어나라! 정대만보다 작게..",
     description: "개노답 호댐러 4인방의 복작복작 부스",
@@ -201,7 +201,7 @@ export const data = [
     author: "복슬, 몽뭉, 이란, 리타리네, 송(위탁)",
   },
   {
-    id: 26,
+    id: 25,
     src: "https://i.imgur.com/QJqPVSr.png",
     title: "아무 사이도 아닌데 보고 싶어 해도 되나요?",
     description:
@@ -210,7 +210,7 @@ export const data = [
     author: "춘키, 두부장수, 치피, 로코",
   },
   {
-    id: 27,
+    id: 26,
     src: "https://i.imgur.com/Kn00EAI.png",
     title: "사탕과 엔진",
     description: "소설만 나오는 부스",
@@ -218,7 +218,7 @@ export const data = [
     author: "리콜라, 수랭",
   },
   {
-    id: 28,
+    id: 27,
     src: "https://i.imgur.com/XIEcdFR.png",
     title: "합쳐서 다리가 10개인 부스",
     description:
@@ -227,7 +227,7 @@ export const data = [
     author: "풍뎅이, shama",
   },
   {
-    id: 29,
+    id: 28,
     src: "https://i.imgur.com/UaxpPiB.jpg",
     title: "호이댐이가 너무 좋으면 만세",
     description: "만세!",
@@ -235,7 +235,7 @@ export const data = [
     author: "덩키",
   },
   {
-    id: 30,
+    id: 29,
     src: "https://i.imgur.com/dXjjetN.png",
     title: "불량아를 구해줬는데 알고 보니 MVP 불꽃남자입니다!",
     description: "신간이 여러 권 나올 예정입니다",
@@ -243,7 +243,7 @@ export const data = [
     author: "야채, 깡",
   },
   {
-    id: 31,
+    id: 30,
     src: "https://i.imgur.com/3308vb6.jpg",
     title: "어서오세요 432호에",
     description: "연애 N년차 양호열과 정대만의 러브하우스",
@@ -251,7 +251,7 @@ export const data = [
     author: "풀먼",
   },
   {
-    id: 32,
+    id: 31,
     src: infoCard,
     title: "부스러가 될수도 있는거임? 호이댐이도?",
     description: "호댐 소설이 나오는 부스 (제발 무사마감 기원)",
@@ -259,7 +259,7 @@ export const data = [
     author: "페퍼",
   },
   {
-    id: 33,
+    id: 32,
     src: "https://i.imgur.com/PnzWKRm.png",
     title: "호이댐이멍멍냥냥",
     description: "호이가 댐이하는 부스",
@@ -267,7 +267,7 @@ export const data = [
     author: "체육시간, 감자",
   },
   {
-    id: 34,
+    id: 33,
     src: "https://i.imgur.com/IgGe5G1.jpg",
     title: "세계제일미식대회:대만스시 편",
     description: "무언가의 호댐을 보여드리겠습니다",
@@ -275,7 +275,7 @@ export const data = [
     author: "영, 새공, 룰루, 토닥",
   },
   {
-    id: 35,
+    id: 34,
     src: infoCard,
     title: "사랑은 주먹을 타고",
     description: "전연령가가 무언가를 또 만듭니다",
@@ -283,7 +283,7 @@ export const data = [
     author: "담요",
   },
   {
-    id: 36,
+    id: 35,
     src: "https://i.imgur.com/tJ2davb.jpg",
     title: "호열이 대만을 내려다보았다...",
     description: "167X184",
@@ -291,7 +291,7 @@ export const data = [
     author: "복권, 은단",
   },
   {
-    id: 37,
+    id: 36,
     src: "https://i.imgur.com/vShss0p.png",
     title: "호댐으로 이행시 하겠습니다",
     description: "호: 호댐! 댐: 사랑을해라!",
@@ -299,7 +299,7 @@ export const data = [
     author: "평화, 망고",
   },
   {
-    id: 38,
+    id: 37,
     src: "https://i.imgur.com/7bML8Y3.png",
     title: "주먹이 운다",
     description: "끝내주는 호열대만",
@@ -307,7 +307,7 @@ export const data = [
     author: "ㅎㅍ, 힐끔",
   },
   {
-    id: 39,
+    id: 38,
     src: "https://i.imgur.com/MhyHrpD.jpg",
     title: "호댐 믿고 시집 안 간다",
     description:
@@ -316,7 +316,7 @@ export const data = [
     author: "이일사, 헤이치, 삐라",
   },
   {
-    id: 40,
+    id: 39,
     src: "https://i.imgur.com/42EO1rB.jpg",
     title: "이봐 소녀들! 이쪽엔 호댐 밖에 없어",
     description:
@@ -325,7 +325,7 @@ export const data = [
     author: "비토, 그윽",
   },
   {
-    id: 41,
+    id: 40,
     src: "https://i.imgur.com/SGX1382.jpg",
     title: "아내를 지키는 앙마",
     description: "호댐 만화 나옵니다",
@@ -333,7 +333,7 @@ export const data = [
     author: "sam, 포틴",
   },
   {
-    id: 42,
+    id: 41,
     src: "https://i.imgur.com/Ge7DgZR.png",
     title: "호댐이 좋다고 말해!",
     description: "호댐이 좋다고! 호댐이 좋다고! 호댐이 좋다고!!",
@@ -341,7 +341,7 @@ export const data = [
     author: "잡곡밥, 스콘",
   },
   {
-    id: 43,
+    id: 42,
     src: "https://i.imgur.com/g3AbJzH.png",
     title: "깜찍이솓아",
     description: "호이댐이 마니 쥬세요!!! (귀엽다는듯이 웃기)",
@@ -349,7 +349,7 @@ export const data = [
     author: "돌저, 솓",
   },
   {
-    id: 44,
+    id: 43,
     src: "https://i.imgur.com/WEDWlRl.png",
     title: "호댐좋은데엉뜨키라고...",
     description: "회지가 나옵니다 (제발...)",
@@ -357,7 +357,7 @@ export const data = [
     author: "낙체공식, 매실",
   },
   {
-    id: 45,
+    id: 44,
     src: "https://i.imgur.com/eBIqGuy.png",
     title: "호댐의 맛 洋三の味 (1962)",
     description:
@@ -366,7 +366,7 @@ export const data = [
     author: "사바",
   },
   {
-    id: 46,
+    id: 45,
     src: "https://i.imgur.com/i0HClUP.png",
     title: "호불호댐",
     description:
@@ -375,7 +375,7 @@ export const data = [
     author: "샤비",
   },
   {
-    id: 47,
+    id: 46,
     src: "https://i.imgur.com/GBxX4qI.jpg",
     title: "가야만한다 위대한 호댐월드",
     description: "잘부탁드립니다.",
@@ -383,7 +383,7 @@ export const data = [
     author: "리케",
   },
   {
-    id: 48,
+    id: 47,
     src: "https://i.imgur.com/W1wWjW5.jpeg",
     title: "0000",
     description: "이런저런 호열대만",
@@ -391,7 +391,7 @@ export const data = [
     author: "day",
   },
   {
-    id: 49,
+    id: 48,
     src: infoCard,
     title: "책이 많이 나오는 부스",
     description: "",
@@ -399,7 +399,7 @@ export const data = [
     author: "밀스, 나의 충실한 번견, 밋치",
   },
   {
-    id: 50,
+    id: 49,
     src: "https://i.imgur.com/56oEjAy.jpg",
     title: "호댐부부가방에들어가신다",
     description: "호댐러브",
@@ -407,7 +407,7 @@ export const data = [
     author: "망, 아버지가방",
   },
   {
-    id: 51,
+    id: 50,
     src: "https://i.imgur.com/6MZ0YWF.png",
     title: "호열의 움직이는 성",
     description: "호열이와 대만이의 마법같은 러브스토리",
@@ -415,7 +415,7 @@ export const data = [
     author: "이알콩, 한홍월",
   },
   {
-    id: 52,
+    id: 51,
     src: "https://i.imgur.com/Eko6UXh.jpg",
     title: "호이댐이 육아해요",
     description: "양호열이 정대만 키우고, 정대만 양호열 키워요",
@@ -423,7 +423,7 @@ export const data = [
     author: "까끼, 호팔이",
   },
   {
-    id: 53,
+    id: 52,
     src: "https://i.imgur.com/euQcnd6.png",
     title: "가장의 무게",
     description:

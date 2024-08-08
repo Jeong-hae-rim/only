@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { data } from "../data/data";
 import { useEffect, useState } from "react";
+import infocard from "../assets/infocard.png";
+import "./infodetail.css";
 
 interface InfoData {
   id: number;
@@ -33,8 +35,16 @@ function InfoDetail() {
 
   return (
     <>
-      <img width="100%" src={getImgUrl(infoData.id)}></img>
-      <p>{infoData.label}</p>
+      {getImgUrl(infoData.id).indexOf("undefined") < 0 ? (
+        <img width="100%" src={getImgUrl(infoData.id)}></img>
+      ) : (
+        <>
+          <img width="100%" src={infocard}></img>
+          <p className="info__detail__description">
+            {infoData.label} 부스는 준비 중입니다!
+          </p>
+        </>
+      )}
     </>
   );
 }
