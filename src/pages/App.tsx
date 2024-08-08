@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="main__container">
       <div onClick={handleOnClick}>
         <img src={reactLogo} className="logo" alt="React logo" />
       </div>
@@ -18,7 +18,7 @@ function App() {
       <h1 className="title">LOVE PUNCH</h1>
       <p className="read-the-docs">2024. 8. 10</p>
       <p className="read-the-docs">SLAM DUNK NON-OFFICIAL FESTIVAL</p>
-    </>
+    </div>
   );
 }
 
