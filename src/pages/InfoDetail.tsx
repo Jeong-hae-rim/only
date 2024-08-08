@@ -46,10 +46,12 @@ function InfoDetail() {
   }
 
   return (
-    <>
+    <div>
       {getImgUrl(infoData.id).indexOf("undefined") < 0 ? (
-        <>
-          <img width="100%" src={getImgUrl(infoData.id)}></img>
+        <div className="info__detail__section">
+          <div>
+            <img width="100%" src={getImgUrl(infoData.id)}></img>
+          </div>
           <div className="table__container">
             <table border={1}>
               <thead>
@@ -74,16 +76,16 @@ function InfoDetail() {
               </tbody>
             </table>
           </div>
-        </>
+        </div>
       ) : (
-        <>
+        <div>
           <img width="100%" src={infocard}></img>
           <p className="info__detail__description">
             {infoData.label} 부스는 준비 중입니다!
           </p>
-        </>
+        </div>
       )}
-    </>
+    </div>
   );
 }
 
