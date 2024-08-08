@@ -12,6 +12,16 @@ interface InfoData {
   label: string;
   author: string;
   path?: string;
+  product: [
+    {
+      id: number;
+      title: string;
+      type: string;
+      price: string;
+      description: string;
+      note: string;
+    }
+  ];
 }
 
 function InfoDetail() {
@@ -36,7 +46,33 @@ function InfoDetail() {
   return (
     <>
       {getImgUrl(infoData.id).indexOf("undefined") < 0 ? (
-        <img width="100%" src={getImgUrl(infoData.id)}></img>
+        <>
+          <img width="100%" src={getImgUrl(infoData.id)}></img>
+          <div className="table__container">
+            <table border={1}>
+              <thead>
+                <tr>
+                  <th>종류</th>
+                  <th>제목</th>
+                  <th>가격</th>
+                  <th>설명</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                {infoData.product.map((product) => (
+                  <tr key={product.id}>
+                    <td>{product.type}</td>
+                    <td>{product.title}</td>
+                    <td>{product.price}</td>
+                    <td>{product.description}</td>
+                    <td>{product.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       ) : (
         <>
           <img width="100%" src={infocard}></img>

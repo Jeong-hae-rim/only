@@ -10,6 +10,7 @@ export const data = [
     label: "호1",
     author: "二階堂, turu",
     path: "/1",
+    product: [],
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const data = [
     description: "신간과 굿즈를 내놓을 예정입니다!",
     label: "호2A",
     author: "五ツ來",
+    product: [],
   },
   {
     id: 3,
@@ -26,6 +28,16 @@ export const data = [
     description: "잇자나 잠들면 안돼.. 좋아하는 호댐 이써?",
     label: "호2B",
     author: "너굴",
+    product: [
+      {
+        id: 1,
+        title: "쇼난러버보이(Shonan Lover Boy)",
+        type: "선입금",
+        price: "19,000",
+        description: "입금자명 + 휴대폰 번호 뒤 4자리 확인 / 15:00까지 수령",
+        note: "현장 판매분 극소량 존재",
+      },
+    ],
   },
   {
     id: 4,
