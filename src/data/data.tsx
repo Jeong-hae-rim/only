@@ -2421,7 +2421,7 @@ export const data = [
         title: "Wild Angel",
         type: "나눔",
         price: "-",
-        description: "소량",
+        description: "소량 위탁",
         note: "치카미나 저",
       },
     ],
