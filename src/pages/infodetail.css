@@ -3,6 +3,7 @@
 }
 
 .info__detail__section {
+  margin-top: 2rem;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -20,6 +21,7 @@ table {
   color: #ff8ef9;
   text-align: center;
   box-shadow: 0 0 20px rgba(249, 156, 242, 0.394);
+  word-break: keep-all;
 }
 
 thead tr {
