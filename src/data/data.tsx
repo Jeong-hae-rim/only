@@ -1050,6 +1050,14 @@ export const data = [
         description: "-",
         note: "두부장수",
       },
+      {
+        id: 6,
+        title: "그때는 짜증났지만 지금은 볼펜",
+        type: "나눔",
+        price: "-",
+        description: "소량! (20개 정도)",
+        note: "치피",
+      },
     ],
   },
   {
