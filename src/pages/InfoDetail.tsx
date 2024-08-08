@@ -56,9 +56,9 @@ function InfoDetail() {
             <table border={1}>
               <thead>
                 <tr>
-                  <th>종류</th>
+                  <th className="type">종류</th>
                   <th>제목</th>
-                  <th>가격</th>
+                  <th className="price">가격</th>
                   <th>설명</th>
                   <th>비고</th>
                 </tr>
@@ -66,9 +66,9 @@ function InfoDetail() {
               <tbody>
                 {infoData.product?.map((product) => (
                   <tr key={product.id}>
-                    <td>{product.type}</td>
+                    <td className="type">{product.type}</td>
                     <td>{product.title}</td>
-                    <td>{product.price}</td>
+                    <td className="price">{product.price}</td>
                     <td>{product.description}</td>
                     <td>{product.note}</td>
                   </tr>
