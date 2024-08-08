@@ -4,6 +4,15 @@ import { useEffect, useState } from "react";
 import infocard from "../assets/infocard.png";
 import "./infodetail.css";
 
+interface Product {
+  id: number;
+  title: string;
+  type: string;
+  price: string;
+  description: string;
+  note: string;
+}
+
 interface InfoData {
   id: number;
   src: string;
@@ -12,25 +21,18 @@ interface InfoData {
   label: string;
   author: string;
   path?: string;
-  product: [
-    {
-      id: number;
-      title: string;
-      type: string;
-      price: string;
-      description: string;
-      note: string;
-    }
-  ];
+  product?: Product[];
 }
 
 function InfoDetail() {
   const param = useParams<{ id: string }>();
-  const [infoData, setInfoData] = useState<InfoData | null>(null);
+  const [infoData, setInfoData] = useState<InfoData | null>(null); // Change to single InfoData object or null
 
   useEffect(() => {
     if (param.id) {
-      const filteredData = data.find((el) => param.id === String(el.id));
+      const filteredData = data.find(
+        (el: InfoData) => param.id === String(el.id)
+      ); // Adjust the type
       setInfoData(filteredData || null);
     }
   }, [param.id]);
@@ -60,7 +62,7 @@ function InfoDetail() {
                 </tr>
               </thead>
               <tbody>
-                {infoData.product.map((product) => (
+                {infoData.product?.map((product) => (
                   <tr key={product.id}>
                     <td>{product.type}</td>
                     <td>{product.title}</td>
