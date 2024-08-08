@@ -1,6 +1,6 @@
 import infoCard from "../assets/infocard.png";
 
-export const ho_data = [
+export const data = [
   {
     id: 1,
     src: "https://i.imgur.com/vWPnZE2.png",
@@ -61,9 +61,6 @@ export const ho_data = [
     label: "호5",
     author: "402",
   },
-];
-
-export const yeol_data = [
   {
     id: 8,
     src: "https://i.imgur.com/EkuGJqD.jpg",
@@ -113,9 +110,6 @@ export const yeol_data = [
     label: "열5",
     author: "광부, 믕",
   },
-];
-
-export const dae_data = [
   {
     id: 15,
     src: "https://i.imgur.com/15tKlFW.png",
@@ -174,9 +168,6 @@ export const dae_data = [
     label: "대6",
     author: "자승, 🍳",
   },
-];
-
-export const man_data = [
   {
     id: 22,
     src: infoCard,
@@ -235,9 +226,6 @@ export const man_data = [
     label: "만6",
     author: "풍뎅이, shama",
   },
-];
-
-export const lo_data = [
   {
     id: 29,
     src: "https://i.imgur.com/UaxpPiB.jpg",
@@ -294,9 +282,6 @@ export const lo_data = [
     label: "러6",
     author: "담요",
   },
-];
-
-export const ve_data = [
   {
     id: 36,
     src: "https://i.imgur.com/tJ2davb.jpg",
@@ -347,9 +332,6 @@ export const ve_data = [
     label: "브6",
     author: "sam, 포틴",
   },
-];
-
-export const pun_data = [
   {
     id: 42,
     src: "https://i.imgur.com/Ge7DgZR.png",
@@ -359,7 +341,7 @@ export const pun_data = [
     author: "잡곡밥, 스콘",
   },
   {
-    id: 42,
+    id: 43,
     src: "https://i.imgur.com/g3AbJzH.png",
     title: "깜찍이솓아",
     description: "호이댐이 마니 쥬세요!!! (귀엽다는듯이 웃기)",
@@ -367,7 +349,7 @@ export const pun_data = [
     author: "돌저, 솓",
   },
   {
-    id: 43,
+    id: 44,
     src: "https://i.imgur.com/WEDWlRl.png",
     title: "호댐좋은데엉뜨키라고...",
     description: "회지가 나옵니다 (제발...)",
@@ -375,7 +357,7 @@ export const pun_data = [
     author: "낙체공식, 매실",
   },
   {
-    id: 44,
+    id: 45,
     src: "https://i.imgur.com/eBIqGuy.png",
     title: "호댐의 맛 洋三の味 (1962)",
     description:
@@ -384,7 +366,7 @@ export const pun_data = [
     author: "사바",
   },
   {
-    id: 45,
+    id: 46,
     src: "https://i.imgur.com/i0HClUP.png",
     title: "호불호댐",
     description:
@@ -393,18 +375,15 @@ export const pun_data = [
     author: "샤비",
   },
   {
-    id: 46,
+    id: 47,
     src: "https://i.imgur.com/GBxX4qI.jpg",
     title: "가야만한다 위대한 호댐월드",
     description: "잘부탁드립니다.",
     label: "펀5",
     author: "리케",
   },
-];
-
-export const ch_data = [
   {
-    id: 47,
+    id: 48,
     src: "https://i.imgur.com/W1wWjW5.jpeg",
     title: "0000",
     description: "이런저런 호열대만",
@@ -412,7 +391,7 @@ export const ch_data = [
     author: "day",
   },
   {
-    id: 48,
+    id: 49,
     src: infoCard,
     title: "책이 많이 나오는 부스",
     description: "",
@@ -420,7 +399,7 @@ export const ch_data = [
     author: "밀스, 나의 충실한 번견, 밋치",
   },
   {
-    id: 49,
+    id: 50,
     src: "https://i.imgur.com/56oEjAy.jpg",
     title: "호댐부부가방에들어가신다",
     description: "호댐러브",
@@ -428,7 +407,7 @@ export const ch_data = [
     author: "망, 아버지가방",
   },
   {
-    id: 50,
+    id: 51,
     src: "https://i.imgur.com/6MZ0YWF.png",
     title: "호열의 움직이는 성",
     description: "호열이와 대만이의 마법같은 러브스토리",
@@ -436,7 +415,7 @@ export const ch_data = [
     author: "이알콩, 한홍월",
   },
   {
-    id: 51,
+    id: 52,
     src: "https://i.imgur.com/Eko6UXh.jpg",
     title: "호이댐이 육아해요",
     description: "양호열이 정대만 키우고, 정대만 양호열 키워요",
@@ -444,7 +423,7 @@ export const ch_data = [
     author: "까끼, 호팔이",
   },
   {
-    id: 52,
+    id: 53,
     src: "https://i.imgur.com/euQcnd6.png",
     title: "가장의 무게",
     description:
