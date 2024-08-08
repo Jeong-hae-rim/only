@@ -2116,6 +2116,56 @@ export const data = [
     description: "이런저런 호열대만",
     label: "치1A",
     author: "day",
+    product: [
+      {
+        id: 1,
+        title: "투명 칼선 스티커",
+        type: "현장판매",
+        price: "4,000",
+        description: "-",
+        note: "-",
+      },
+      {
+        id: 2,
+        title: "조각 스티커 2조각 1세트",
+        type: "현장판매",
+        price: "2,500",
+        description: "-",
+        note: "-",
+      },
+      {
+        id: 3,
+        title: "떡메모지",
+        type: "현장판매",
+        price: "3,000",
+        description: "1부 100매",
+        note: "-",
+      },
+      {
+        id: 4,
+        title: "호댐 폴라로이드 A/B",
+        type: "현장판매",
+        price: "2,500",
+        description: "각각 (set X)",
+        note: "-",
+      },
+      {
+        id: 5,
+        title: "아크릴펜꽂이",
+        type: "현장판매",
+        price: "14,000",
+        description: "-",
+        note: "-",
+      },
+      {
+        id: 6,
+        title: "부스 무료 나눔 조각 스티커",
+        type: "나눔",
+        price: "-",
+        description: "-",
+        note: "-",
+      },
+    ],
   },
   {
     id: 48,
@@ -2124,6 +2174,7 @@ export const data = [
     description: "",
     label: "치1B",
     author: "밀스, 나의 충실한 번견, 밋치",
+    product: [],
   },
   {
     id: 49,
@@ -2132,6 +2183,7 @@ export const data = [
     description: "호댐러브",
     label: "치2",
     author: "망, 아버지가방",
+    product: [],
   },
   {
     id: 50,
@@ -2140,6 +2192,7 @@ export const data = [
     description: "호열이와 대만이의 마법같은 러브스토리",
     label: "치3",
     author: "이알콩, 한홍월",
+    product: [],
   },
   {
     id: 51,
@@ -2148,6 +2201,7 @@ export const data = [
     description: "양호열이 정대만 키우고, 정대만 양호열 키워요",
     label: "치4",
     author: "까끼, 호팔이",
+    product: [],
   },
   {
     id: 52,
@@ -2157,5 +2211,6 @@ export const data = [
       "호열대만 헌법 제 1조 ①양호열과 정대만은 서로를 사랑한다. ②양호열의 주권은 정대만에게 있고, 모든 권력은 정대만으로부터 나온다.",
     label: "치5",
     author: "텍, 피톤치드, 치카미나",
+    product: [],
   },
 ];
