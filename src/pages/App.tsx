@@ -1,6 +1,6 @@
-import reactLogo from "../assets/lovepunch.png";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
+import reactLogo from "../assets/lovepunch.png";
 
 function App() {
   const navigate = useNavigate();

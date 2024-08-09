@@ -1,8 +1,8 @@
+import "./infodetail.css";
 import { useParams } from "react-router-dom";
 import { data } from "../data/data";
 import { useEffect, useState } from "react";
 import infocard from "../assets/infocard.png";
-import "./infodetail.css";
 
 interface Product {
   id: number;

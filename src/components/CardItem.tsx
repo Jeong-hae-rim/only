@@ -9,7 +9,7 @@ type CardProps = {
   author: string;
 };
 
-function InfoItem(props: CardProps) {
+function CardItem(props: CardProps) {
   return (
     <>
       <li className="cards__item">
@@ -32,4 +32,4 @@ function InfoItem(props: CardProps) {
   );
 }
 
-export default InfoItem;
+export default CardItem;
