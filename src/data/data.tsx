@@ -1438,7 +1438,7 @@ export const data = [
         type: "나눔",
         price: "-",
         description: "1인 1매",
-        note: "-",
+        note: "풍뎅이",
       },
       {
         id: 14,
