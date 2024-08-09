@@ -5,3 +5,32 @@ h1 {
 .info__container {
   margin-top: 3rem;
 }
+
+.notice__container {
+  border: 1px solid #ff8ef9;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.notice__1,
+.notice__2 {
+  border: 1px solid #5e97cf;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.notice__1,
+.notice__2 > p {
+  color: #5e97cf;
+  text-align: center;
+  font-size: small;
+  font-weight: 800;
+}
+
+.notice__1 > p > span,
+.notice__2 > p > span {
+  color: #ff49f3;
+}
