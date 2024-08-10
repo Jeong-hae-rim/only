@@ -6,7 +6,7 @@ function App() {
   const navigate = useNavigate();
 
   const handleOnClick = () => {
-    navigate("/info");
+    navigate("/love-you");
   };
 
   return (
