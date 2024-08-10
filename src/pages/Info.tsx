@@ -1,4 +1,4 @@
-// import "./info.css";
+import "./info.css";
 // import { useState } from "react";
 // import { data } from "../data/data";
 // import Card from "../components/Card";
