@@ -19,7 +19,7 @@ interface InfoData {
   title: string;
   description: string;
   label: string;
-  author: string;
+  author: string[];
   path?: string;
   product?: Product[];
 }
