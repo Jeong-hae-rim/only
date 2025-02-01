@@ -8,7 +8,7 @@
   padding: 10px;
   width: 100%;
   max-width: 400px;
-  border: 2px solid #ff8ef9;
+  border: 2px solid #d4d4d4;
   border-radius: 5px;
   font-size: 16px;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -17,10 +17,10 @@
 
 .search-input:focus {
   border-color: #6ebbff;
-  box-shadow: 0 0 5px rgba(227, 124, 255, 0.5);
+  box-shadow: 0 0 5px #6ebbff;
   outline: none;
 }
 
 .search-input::placeholder {
-  color: #ffc8fc;
+  color: rgb(230, 230, 230);
 }

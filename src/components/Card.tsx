@@ -7,7 +7,6 @@ const Card = ({ infoData }: InfoDataProps) => {
     <div className="cards">
       <div className="cards__container">
         <div className="cards__wrapper">
-          <ul className="cards__items"></ul>
           {infoData.map((el) => (
             <CardItem
               key={el.title}

@@ -12,22 +12,22 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: "hoyeol x daeman only festival LOVE PUNCH",
-        short_name: "hodam LOVE PUNCH",
+        name: "hoyeol x daeman only festival LOVE&BALL",
+        short_name: "LOVE&BALL",
         theme_color: "#ffffff",
         icons: [
           {
-            src: "/pwa-192x192.png",
+            src: "/maskable_icon_x192.png",
             type: "image/png",
             sizes: "192x192",
           },
           {
-            src: "/pwa-512x512.png",
+            src: "/maskable_icon_x512.png",
             type: "image/png",
             sizes: "512x512",
           },
           {
-            src: "/maskable-icon-512x512.png",
+            src: "/maskable_icon_x512.png",
             type: "image/png",
             sizes: "512x512",
             purpose: "maskable",

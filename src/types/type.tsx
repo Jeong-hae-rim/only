@@ -14,7 +14,7 @@ export interface InfoDataProps {
     title: string;
     description: string;
     label: string;
-    author: string;
+    author: string[];
     product: Product[]; // 'product'를 포함하도록 수정
   }[];
 }

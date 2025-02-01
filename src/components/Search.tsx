@@ -15,7 +15,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
         type="text"
         value={searchTerm}
         onChange={onSearchChange}
-        placeholder="부스 명 / 작가님 이름 / 부스 위치로 검색 해보세요!"
+        placeholder="부스 명 / 작가님 이름 / 부스 위치로 검색"
         className="search-input"
       />
     </div>
