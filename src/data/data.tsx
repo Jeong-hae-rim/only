@@ -113,7 +113,7 @@ export const data = [
   },
   {
     id: 12,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A60c5eca2-0fa6-40b6-99e3-09255b878208%3A%E1%84%92%E1%85%A9%E1%84%83%E1%85%A2%E1%86%B7%E1%84%8B%E1%85%A9%E1%86%AB%E1%84%87%E1%85%AE%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%86%BA_%E1%84%8B%E1%85%AA%E1%84%89%E1%85%A1%E1%84%87%E1%85%B5%E1%84%87%E1%85%B5%E1%86%BC%E1%84%89%E1%85%AE_2025.jpg?table=block&id=190f5465-ec9c-8006-9fef-fc44abef92fc&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "지금부터제가무슨짓을하든제호댐을의심하지",
     description: "",
     label: "LOVE & BALL",
@@ -305,7 +305,7 @@ export const data = [
   },
   {
     id: 31,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A5398b1e1-c310-4744-972c-ec5860b1d2ea%3A%E1%84%92%E1%85%A9%E1%84%83%E1%85%A2%E1%86%B7%E3%85%87%E3%85%88%E1%84%92%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E3%85%87%E3%85%88%E1%84%8B%E1%85%B5%E1%86%B7_%E1%84%87%E1%85%AE%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%86%BA.jpg?table=block&id=190f5465-ec9c-80a0-aee5-d2e0b76351a4&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "호댐ㅇㅈ하는이유ㅇㅈ임",
     description: "",
     label: "LOVE & BALL",
@@ -325,7 +325,7 @@ export const data = [
   },
   {
     id: 33,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3Ad02466ab-60b3-4ed2-bb2d-f6be93abc645%3A%E1%84%87%E1%85%AE%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%86%BA_%E1%84%92%E1%85%A9%E1%84%83%E1%85%A2%E1%86%B7%E1%84%8B%E1%85%B3%E1%84%85%E1%85%A9%E1%84%81%E1%85%B3%E1%86%B6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3.jpg?table=block&id=190f5465-ec9c-80fc-80f3-d50fdfc31b14&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "호댐으로끓인단추스프",
     description: "",
     label: "LOVE & BALL",
@@ -415,7 +415,7 @@ export const data = [
   },
   {
     id: 42,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A752de1f9-2952-422c-88b2-f56039702d6e%3A%E1%84%87%E1%85%AE%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A5%E1%86%BA.png?table=block&id=190f5465-ec9c-8012-9493-f6f5739bb8fb&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "내호댐짱이찌",
     description: "",
     label: "LOVE & BALL",
