@@ -11,13 +11,17 @@ const SearchInput: React.FC<SearchInputProps> = ({
 }) => {
   return (
     <div className="search-container">
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={onSearchChange}
-        placeholder="부스 명 / 작가님 이름 / 부스 위치로 검색"
-        className="search-input"
-      />
+      <div className="search-8bit">
+        <div className="search-wrapper">
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={onSearchChange}
+            placeholder="부스 명 / 작가님 이름 / 부스 위치로 검색"
+            className="search-input"
+          />
+        </div>
+      </div>
     </div>
   );
 };

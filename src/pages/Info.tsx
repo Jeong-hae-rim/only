@@ -3,6 +3,9 @@ import { useState } from "react";
 import { data } from "../data/data";
 import Card from "../components/Card";
 import SearchInput from "../components/Search";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Finding from "../components/Finding";
 
 function Info() {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -25,18 +28,24 @@ function Info() {
 
   return (
     <div className="info__container">
-      <h1 className="title2">
-        {" "}
-        <span className="dela-gothic-one-regular">ツッパリ</span> HIGH SCHOOL
-      </h1>
-      <h1 className="title2">✨️ LOVE & BALL ✨️</h1>
-      <br />
-      <h2 className="title3">부스 리스트</h2>
-      <SearchInput
-        searchTerm={searchTerm}
-        onSearchChange={handleSearchChange}
-      />
-      {/* <div className="notice__container">
+      <Header />
+      <div className="test-wrapper">
+        <div className="info__wrapper">
+          <div className="info__wrap">
+            <div className="info__contents">
+              <h1 className="title2">
+                {" "}
+                <span className="dela-gothic-one-regular">ツッパリ</span> HIGH
+                SCHOOL
+              </h1>
+              <h1 className="title2">⊹⁺ LOVE & BALL ⊹⁺</h1>
+              <br />
+              <h2 className="title3">부스 리스트</h2>
+              <SearchInput
+                searchTerm={searchTerm}
+                onSearchChange={handleSearchChange}
+              />
+              {/* <div className="notice__container">
         <h3 className="title">NOTICE</h3>
         <div className="notice__1">
           <p className="notice__title">
@@ -58,7 +67,16 @@ function Info() {
           </p>
         </div>
       </div> */}
-      <Card infoData={filteredData} />
+              {filteredData.length !== 0 ? (
+                <Card infoData={filteredData} />
+              ) : (
+                <Finding />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

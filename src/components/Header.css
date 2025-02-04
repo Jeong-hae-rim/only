@@ -1,0 +1,84 @@
+.header-wrapper {
+  flex-shrink: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #e1f1ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  margin-top: 3px;
+  width: 100%;
+  height: 30px;
+  float: left;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #79a1c3;
+}
+.header-container .header-wrap {
+  display: flex;
+  color: white;
+  padding: 7.5px;
+  margin: -3px 0;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  align-items: center;
+}
+
+.header-container::before,
+.header-container::after,
+.header-container .header-wrap::before,
+.header-container .header-wrap::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background: white;
+}
+.header-container::before {
+  /* top: +3px;
+  left: +3px; */
+}
+.header-container::after {
+  top: +27px;
+  /* left: px; */
+}
+.header-container .header-wrap::before {
+  top: 0px;
+  left: 99.7%;
+}
+.header-container .header-wrap::after {
+  top: +27px;
+  left: 99.7%;
+}
+
+.header-wrap span {
+  margin-top: -1px;
+  font-style: italic;
+  font-size: small;
+}
+
+.navigate {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  gap: 16px;
+  margin-top: 5px;
+  margin-left: 1rem;
+  align-items: center;
+  list-style: none;
+  color: white;
+  text-shadow: 0px 1px 1px #faacd0;
+}
+
+.navigate span {
+  text-decoration: underline;
+  color: #ffb8d8;
+  text-shadow: none;
+}
