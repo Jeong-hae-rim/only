@@ -7,14 +7,22 @@ interface Product {
   note: string;
 }
 
+export interface CardDataProps {
+  infoData: CardProps;
+  onClick: (card: CardProps) => void;
+}
+
+export type CardProps = {
+  id: number; // 추가
+  src: string;
+  title: string;
+  description: string;
+  label: string;
+  author: string[];
+  product: Product[]; // 추가
+};
+
 export interface InfoDataProps {
-  infoData: {
-    id: number;
-    src: string;
-    title: string;
-    description: string;
-    label: string;
-    author: string[];
-    product: Product[];
-  }[];
+  infoData: CardProps;
+  onClick: (card: CardProps[number]) => void;
 }

@@ -52,30 +52,6 @@ function InfoDetail() {
           <div>
             <img width="100%" src={getImgUrl(infoData.id)}></img>
           </div>
-          <div className="table__container">
-            <table border={1}>
-              <thead>
-                <tr>
-                  <th className="type">종류</th>
-                  <th>제목</th>
-                  <th className="price">가격</th>
-                  <th>설명</th>
-                  <th>비고</th>
-                </tr>
-              </thead>
-              <tbody>
-                {infoData.product?.map((product) => (
-                  <tr key={product.id}>
-                    <td className="type">{product.type}</td>
-                    <td>{product.title}</td>
-                    <td className="price">{product.price}</td>
-                    <td>{product.description}</td>
-                    <td>{product.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
         </div>
       ) : (
         <div>
