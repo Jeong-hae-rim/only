@@ -1,7 +1,6 @@
 @supports (-webkit-touch-callout: none) {
   .cards__item__text {
     color: black !important;
-    font-family: Arial, sans-serif !important;
     opacity: 1 !important;
     visibility: visible !important;
     -webkit-text-fill-color: initial !important;
