@@ -154,6 +154,7 @@
   border-top-right-radius: 3px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-left: 3px dashed;
   color: #fff;
   font-size: 10px;
   font-weight: 100;
@@ -165,7 +166,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -12px;
+  left: -14px;
   width: 0;
   height: 0;
   border-color: transparent var(--tag-bg, #3243a5) transparent transparent;
@@ -173,7 +174,7 @@
   border-width: 12px 12px 12px 0;
 }
 
-.tags span:after {
+/* .tags span:after {
   content: "";
   position: absolute;
   top: 10px;
@@ -186,7 +187,7 @@
   background: #fff;
   -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
   box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
-}
+} */
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
