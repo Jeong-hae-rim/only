@@ -11,17 +11,33 @@ function App() {
 
   return (
     <div className="main__container">
-      <div onClick={handleOnClick}>
+      <div>
         <img src={reactLogo} className="logo" alt="React logo" />
       </div>
-      <h2 className="title">HOYEOL X DAEMAN ONLY</h2>
-      <h1 className="title2">
-        {" "}
-        <span className="dela-gothic-one-regular">ツッパリ</span> HIGH SCHOOL
-      </h1>
-      <h1 className="title2">⊹⁺ LOVE & BALL ⊹⁺</h1>
-      <p className="read-the-docs">2025. 05. 24</p>
-      <p className="read-the-docs">SLAM DUNK NON-OFFICIAL FESTIVAL</p>
+      <div className="nes-container with-title game-box-wrapper">
+        <p className="title">HOYEOL X DAEMAN ONLY</p>
+        <h3 className="title2"> ツッパリ </h3>
+        <h3 className="title2"> HIGH SCHOOL </h3>
+        <h2 className="title2">⊹⁺ LOVE & BALL ⊹⁺</h2>
+        <div className="label-wrapper">
+          <label>
+            <input
+              type="radio"
+              className="nes-radio"
+              name="answer"
+              onClick={handleOnClick}
+              checked
+            />
+            <span>Yes</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="answer" />
+            <span>No</span>
+          </label>
+        </div>
+        <p className="read-the-docs">2025. 05. 24</p>
+        <p className="read-the-docs">SLAM DUNK NON-OFFICIAL FESTIVAL</p>
+      </div>
     </div>
   );
 }
