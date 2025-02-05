@@ -26,22 +26,22 @@ function CardItem(props: CardProps) {
                 src={props.src}
               />
             </div>
-            <div className="cards__item__info">
-              <h5 className="cards__item__text">{props.title}</h5>
-              <div className="tags">
-                {props.author.map((name, index) => (
-                  <span
-                    key={index}
-                    style={
-                      { "--tag-bg": getRandomColor() } as React.CSSProperties
-                    }
-                  >
-                    {name}
-                  </span>
-                ))}
-              </div>
-            </div>
           </Link>
+          <div className="cards__item__info">
+            <h5 className="cards__item__text">{props.title}</h5>
+            <div className="tags">
+              {props.author.map((name, index) => (
+                <span
+                  key={index}
+                  style={
+                    { "--tag-bg": getRandomColor() } as React.CSSProperties
+                  }
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </li>
     </>

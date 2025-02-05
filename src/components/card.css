@@ -1,14 +1,3 @@
-@supports (-webkit-touch-callout: none) {
-  .cards__item__text {
-    color: black !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    -webkit-text-fill-color: initial !important;
-    position: relative !important;
-    z-index: 10 !important;
-  }
-}
-
 .cards__container {
   display: flex;
   flex-direction: column;
