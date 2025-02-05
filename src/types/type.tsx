@@ -22,7 +22,17 @@ export type CardProps = {
   product: Product[]; // 추가
 };
 
+export type FilterData = {
+  id: number;
+  src: string;
+  title: string;
+  description: string;
+  label: string;
+  author: string[];
+  product: Product[];
+}[];
+
 export interface InfoDataProps {
-  infoData: CardProps;
-  onClick: (card: CardProps[number]) => void;
+  infoData: FilterData;
+  onClick: (card: FilterData[number]) => void;
 }
