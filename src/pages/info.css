@@ -46,7 +46,7 @@ h1 {
 }
 
 .test-wrapper::-webkit-scrollbar {
-  scrollbar-width: none;
+  display: none;
 }
 
 .null-section {
