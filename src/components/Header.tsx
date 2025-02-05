@@ -5,7 +5,9 @@ const Header = () => {
     <div className="wrapper">
       <div className="header-container">
         <div className="header-wrap">
-          <span>♥ ツッパリ Highschool ⊹⁺ Love & Ball</span>
+          <span>
+            <div className="heart">🩷</div> ツッパリ Highschool ⊹⁺ Love & Ball
+          </span>
         </div>
       </div>
       <div className="navigate">
