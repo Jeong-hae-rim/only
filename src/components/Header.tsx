@@ -13,7 +13,9 @@ const Header = () => {
       </div>
       <div className="navigate">
         <li>
-          <span>H</span>OME_
+          <Link to={"/love-and-ball"}>
+            <span>H</span>OME_
+          </Link>
         </li>
         <li>
           <span> Y</span>EAR LIST_
