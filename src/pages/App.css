@@ -44,7 +44,7 @@ body {
   filter: drop-shadow(0 0 2em #ff84f9aa);
 }
 
-.game-box-wrapper {
+.main__container > .game-box-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,12 +62,8 @@ body {
   gap: 15px;
 }
 
-.nes-container {
+.main__container > .nes-container {
   border-color: #79a1c3;
-}
-
-.nes-container.with-title > .title {
-  /* margin: -2.5rem 0 1rem; */
 }
 
 .title {

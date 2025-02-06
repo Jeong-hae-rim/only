@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./pages/App";
 import Info from "./pages/Info";
 import NotFound from "./pages/404";
+import DateLog from "./pages/DateLog";
 
 const Router = () => {
   return (
@@ -9,7 +10,8 @@ const Router = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/loveandball" element={<Info />} />
+          <Route path="/love-and-ball" element={<Info />} />
+          <Route path="/date-log" element={<DateLog />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

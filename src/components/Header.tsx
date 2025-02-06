@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -18,7 +19,9 @@ const Header = () => {
           <span> Y</span>EAR LIST_
         </li>
         <li>
-          <span> D</span>ATE LOG_
+          <Link to={"/date-log"}>
+            <span> D</span>ATE LOG_
+          </Link>
         </li>
         <li>
           <span> M</span>ORE_

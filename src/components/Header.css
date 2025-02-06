@@ -82,6 +82,10 @@
   text-shadow: none;
 }
 
+.navigate a {
+  color: white;
+}
+
 .heart {
   font-size: x-small;
 }
