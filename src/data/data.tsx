@@ -245,7 +245,7 @@ export const data = [
   },
   {
     id: 25,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A8cf14536-fd25-42a0-8c9c-5458c3552e1d%3A2025-02-09-17-05-53-336.jpg?table=block&id=195f5465-ec9c-808a-9cee-f045a0d70197&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "호댐이 권력이다",
     description: "",
     label: "LOVE & BALL",
