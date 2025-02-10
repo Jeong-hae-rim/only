@@ -33,7 +33,7 @@ export const data = [
   },
   {
     id: 4,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A9f154396-2c2f-4bc6-a093-8333cbd498f0%3ASNOW_20250210_213252_522.png?table=block&id=196f5465-ec9c-80aa-bfdd-ec40d6323c36&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "털뭉치 호댐샵",
     description: "",
     label: "LOVE & BALL",
@@ -395,7 +395,7 @@ export const data = [
   },
   {
     id: 40,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A4a327eb5-b2d4-45d5-b9c6-ccd64a26da10%3AKakaoTalk_20240505_012749099.png?table=block&id=196f5465-ec9c-80a7-8124-f705d0bf79a6&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "가장의 무게",
     description: "",
     label: "LOVE & BALL",
