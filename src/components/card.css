@@ -124,16 +124,15 @@
 .tags {
   display: grid;
   padding: 5px 0 0 5px;
-  gap: 20px;
+  gap: 10px;
   margin-top: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 2fr));
   justify-items: center;
 }
 
 .tags span {
   display: inline-block;
   height: 24px;
-  width: 80px;
   line-height: 24px;
   position: relative;
   padding: 0 10px 0 12px;
@@ -153,6 +152,7 @@
 }
 
 .tags span:only-child {
+  width: 80px;
   display: flex;
   justify-content: center;
 }
