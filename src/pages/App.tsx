@@ -1,9 +1,16 @@
 import "./App.css";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import reactLogo from "../assets/loveandball.png";
 
 function App() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.oncontextmenu = function () {
+      return false;
+    };
+  }, []);
 
   const handleOnClick = () => {
     navigate("/love-and-ball");
