@@ -359,7 +359,7 @@ export const data = [
     title: "호열대만 다 줘세요",
     description: "",
     label: "LOVE & BALL",
-    author: ["풍뎅이", "진삼"],
+    author: ["풍뎅이", "진삼", "수랭"],
     path: "",
     product: [],
   },
