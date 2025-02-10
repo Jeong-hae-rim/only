@@ -409,7 +409,7 @@ export const data = [
     title: "너무나 많이 호댐 한 죄",
     description: "",
     label: "LOVE & BALL",
-    author: ["그윽", "메3", "최종맹수", "공백"],
+    author: ["그윽", "메3"],
     path: "",
     product: [],
   },
