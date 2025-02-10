@@ -1,4 +1,4 @@
-import "./card.css";
+import "./Card.css";
 import { InfoDataProps } from "../types/type";
 import CardItem from "./CardItem";
 
