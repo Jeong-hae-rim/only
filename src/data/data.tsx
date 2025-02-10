@@ -355,7 +355,7 @@ export const data = [
   },
   {
     id: 36,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A2940853d-146b-4155-8220-7a49220bff6b%3A%ED%98%B8%EC%97%B4%EB%8C%80%EB%A7%8C%EB%8B%A4%EC%A4%98%EC%84%B8%EC%9A%94_%ED%92%8D%EB%8E%85%EC%9D%B4_%EB%B6%80%EC%8A%A4%EC%BB%B7.png?table=block&id=196f5465-ec9c-80bb-9e2e-f146f3be2254&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "호열대만 다 줘세요",
     description: "",
     label: "LOVE & BALL",
