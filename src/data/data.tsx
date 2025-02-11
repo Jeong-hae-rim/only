@@ -103,7 +103,7 @@ export const data = [
   },
   {
     id: 11,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A0cac150d-98cc-4070-b866-eb1c472b4001%3AIMG_7104.jpeg?table=block&id=197f5465-ec9c-801d-885e-e4105e89eec7&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "호열대만퍼리로드",
     description: "",
     label: "LOVE & BALL",
@@ -239,7 +239,7 @@ export const data = [
     title: "대만이가수줍어서화냄 호열이가왜또화내냐캄",
     description: "",
     label: "LOVE & BALL",
-    author: ["까끼"],
+    author: ["까끼", "피톤치드"],
     path: "",
     product: [],
   },
@@ -315,7 +315,7 @@ export const data = [
   },
   {
     id: 32,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3A84645784-ba86-4dfe-a01a-ed9650346594%3A14%EB%B2%88%EC%A7%B8_%EB%B9%84%EC%83%81%EA%B5%AC_%EB%B6%80%EC%8A%A4%EC%BB%B7_%EC%97%85%EB%A1%9C%EB%93%9C%EC%9A%A9.jpg?table=block&id=197f5465-ec9c-8080-8d9a-f1fb81aa6831&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "14번째 비상구",
     description: "",
     label: "LOVE & BALL",
