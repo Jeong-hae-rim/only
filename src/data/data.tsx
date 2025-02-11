@@ -329,7 +329,7 @@ export const data = [
     title: "호댐으로끓인단추스프",
     description: "",
     label: "LOVE & BALL",
-    author: ["우망", "크림", "리콜라"],
+    author: ["우망", "크림"],
     path: "",
     product: [],
   },
