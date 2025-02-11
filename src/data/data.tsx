@@ -375,7 +375,7 @@ export const data = [
   },
   {
     id: 38,
-    src: infoCard,
+    src: "https://yomichus2only.notion.site/image/attachment%3Af3015a5b-ad41-4cb6-b4e9-31bb1943aa85%3Aunnamed.jpg?table=block&id=197f5465-ec9c-80fe-a304-d2b8d993aa6e&spaceId=fcf9a862-df71-49c1-b113-9a1026fd98a1&width=1390&userId=&cache=v2",
     title: "능이버섯",
     description: "",
     label: "LOVE & BALL",
