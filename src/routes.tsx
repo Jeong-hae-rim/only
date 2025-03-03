@@ -3,6 +3,7 @@ import App from "./pages/App";
 import Info from "./pages/Info";
 import NotFound from "./pages/404";
 import DateLog from "./pages/DateLog";
+import MbtiGame from "./pages/MbtiGame";
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
           <Route path="/" element={<App />} />
           <Route path="/love-and-ball" element={<Info />} />
           <Route path="/date-log" element={<DateLog />} />
+          <Route path="/hydm-game" element={<MbtiGame />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
