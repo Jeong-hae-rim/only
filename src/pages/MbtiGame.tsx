@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./MbtiGame.css";
 import GAMEBOY from "../assets/images/gameboy.png";
-import { mbtiNames } from "../types/type";
+import { mbtiData } from "../types/type";
 
 interface Question {
   question: string;
@@ -153,19 +153,30 @@ function MbtiGame() {
           <button className="quit gbtn">끝내기</button>
         </div>
       ) : (
-        <div className="question-box">
+        <>
           {mbtiResult ? (
             // MBTI 결과 표시
-            <div className="result">
-              <h3>호열이의 🩷 타입은?</h3>
-              <p className="mbti-name">{mbtiNames[mbtiResult]}</p>
-              <button className="quit gbtn" onClick={restartGame}>
-                돌아가기
-              </button>
+            <div className="result-wrapper">
+              {mbtiData[mbtiResult]?.image && (
+                <img
+                  src={mbtiData[mbtiResult].image}
+                  alt={mbtiResult}
+                  className="mbti-image"
+                />
+              )}
+              <div className="question-box">
+                <div className="result">
+                  <h3>호열이의 🩷 타입은?</h3>
+                  <p className="mbti-name">{mbtiData[mbtiResult]?.name}</p>
+                  <button className="quit gbtn" onClick={restartGame}>
+                    돌아가기
+                  </button>
+                </div>
+              </div>
             </div>
           ) : (
             // 질문 표시
-            <div>
+            <div className="question-box">
               <p className="question">
                 {questions[currentQuestionIndex].question}
               </p>
@@ -184,7 +195,7 @@ function MbtiGame() {
               </div>
             </div>
           )}
-        </div>
+        </>
       )}
     </div>
   );

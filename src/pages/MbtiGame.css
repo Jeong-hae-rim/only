@@ -97,10 +97,102 @@ button:focus:not(:focus-visible) {
   font-weight: normal;
 }
 
-@media screen and (max-width: 380px) {
+.mbti-image {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translateX(-50%); /* 중앙 정렬 */
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
   .question-box {
-    top: 47%;
+    top: 51%;
+    width: 300px;
+  }
+
+  .mbti-image {
+    width: 150px;
+    top: 32%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .question-box {
+    top: 51%;
+  }
+
+  .mbti-image {
+    width: 150px;
+    top: 29%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .question-box {
+    top: 50%;
+  }
+
+  .mbti-image {
+    width: 130px;
+    top: 27%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .question-box {
+    top: 48%;
     width: 245px; /* 너비를 250px로 고정 */
+  }
+
+  .mbti-image {
+    width: 130px;
+    height: auto;
+    position: absolute;
+    top: 23%;
+  }
+
+  .option {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .question-box {
+    top: 48%;
+    width: 245px; /* 너비를 250px로 고정 */
+  }
+
+  .mbti-image {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+  }
+
+  .option {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .question-box {
+    top: 48%;
+    width: 245px; /* 너비를 250px로 고정 */
+  }
+
+  .mbti-image {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 24%;
   }
 
   .option {
