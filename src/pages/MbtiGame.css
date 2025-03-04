@@ -146,6 +146,17 @@ button:focus:not(:focus-visible) {
   }
 }
 
+@media screen and (max-width: 430px) and (max-height: 800px) {
+  .question-box {
+    top: 50%;
+  }
+
+  .mbti-image {
+    width: 130px;
+    top: 24%;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .question-box {
     top: 48%;
