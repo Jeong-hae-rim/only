@@ -158,51 +158,49 @@ function MbtiGame() {
           <button className="quit gbtn">끝내기</button>
         </div>
       ) : (
-        <>
+        <div className="question-box">
           {mbtiResult ? (
             // MBTI 결과 표시
-            <div className="result-wrapper">
-              {mbtiData[mbtiResult]?.image && (
-                <img
-                  src={mbtiData[mbtiResult].image}
-                  alt={mbtiResult}
-                  className="mbti-image"
-                />
-              )}
-              <div className="question-box">
-                <div className="result">
-                  <h3>대만이의 🩷 타입은?</h3>
-                  <p className="mbti-name">{mbtiData[mbtiResult]?.name}</p>
-                  <button className="quit gbtn" onClick={restartGame}>
-                    돌아가기
-                  </button>
-                </div>
+            <>
+              <div>
+                {mbtiData[mbtiResult]?.image && (
+                  <img
+                    src={mbtiData[mbtiResult].image}
+                    alt={mbtiResult}
+                    className="mbti-image"
+                  />
+                )}
               </div>
-            </div>
+              <div className="result">
+                <h3>대만이의 🩷 타입은?</h3>
+                <p className="mbti-name">{mbtiData[mbtiResult]?.name}</p>
+                <button className="quit gbtn" onClick={restartGame}>
+                  돌아가기
+                </button>
+              </div>
+            </>
           ) : (
             // 질문 표시
-            <div className="question-box">
-              <div>
-                <p className="question">
-                  {questions[currentQuestionIndex].question}
-                </p>
-                <div className="options">
-                  {questions[currentQuestionIndex].options.map(
-                    (option, index) => (
-                      <button
-                        key={index}
-                        className="option gbtn"
-                        onClick={() => handleAnswer(option.value)}
-                      >
-                        {option.text}
-                      </button>
-                    )
-                  )}
-                </div>
+            <div>
+              <p className="question">
+                {questions[currentQuestionIndex].question}
+              </p>
+              <div className="options">
+                {questions[currentQuestionIndex].options.map(
+                  (option, index) => (
+                    <button
+                      key={index}
+                      className="dm-option gbtn"
+                      onClick={() => handleAnswer(option.value)}
+                    >
+                      {option.text}
+                    </button>
+                  )
+                )}
               </div>
             </div>
           )}
-        </>
+        </div>
       )}
     </div>
   );
