@@ -7,7 +7,7 @@ const PWAUpdate = () => {
 
   useEffect(() => {
     if (needRefresh) {
-      updateServiceWorker(true);
+      setShowReload(true);
     }
   }, [needRefresh]);
 
