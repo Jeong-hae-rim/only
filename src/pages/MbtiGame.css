@@ -7,9 +7,17 @@
   align-items: center;
 }
 
+.gameboy-box {
+  position: relative;
+  width: 368px; /* 게임보이 크기 고정 */
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .gameboy-image {
-  width: 90%;
-  max-width: 400px; /* 최대 크기 지정 */
+  width: 100%;
   height: auto;
 }
 
@@ -56,12 +64,12 @@ button:focus:not(:focus-visible) {
 
 .question-box {
   position: absolute;
-  top: 50%;
+  top: 330px;
   left: 49.5%;
   transform: translate(-50%, -50%);
+  width: 80%;
   padding: 10px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
   color: white;
   text-align: center;
 }
@@ -104,87 +112,11 @@ button:focus:not(:focus-visible) {
   left: 50%;
 }
 
+.option-box,
 .result {
   margin-top: 10px;
+  width: 100%;
   padding: 10px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 950px) {
-  .question-box {
-    top: 40%;
-    width: 245px; /* 너비를 250px로 고정 */
-  }
-
-  .mbti-image {
-    width: 150px;
-    top: 29%;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .question-box {
-    top: 42%;
-    width: 300px;
-  }
-
-  .mbti-image {
-    width: 150px;
-    top: 32%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .question-box {
-    top: 40%;
-    width: 300px; /* 너비를 250px로 고정 */
-  }
-
-  .mbti-image {
-    width: 130px;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .question-box {
-    top: 40%;
-    width: 280px; /* 너비를 250px로 고정 */
-  }
-
-  .mbti-image {
-    width: 130px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .question-box {
-    width: 245px; /* 너비를 250px로 고정 */
-  }
-
-  .option {
-    width: 230px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .question-box {
-    top: 37%;
-    width: 245px; /* 너비를 250px로 고정 */
-  }
-
-  .mbti-image {
-    width: 130px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .question-box {
-    top: 39%;
-    width: 245px; /* 너비를 250px로 고정 */
-  }
-
-  .mbti-image {
-    width: 130px;
-  }
 }
