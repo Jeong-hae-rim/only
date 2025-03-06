@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="main__container">
-      <PWAUpdate />
+      {/* <PWAUpdate /> */}
       <div>
         <img src={reactLogo} className="logo" alt="React logo" />
       </div>
