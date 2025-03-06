@@ -1,15 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRegisterSW } from "virtual:pwa-register/react";
 
 const PWAUpdate = () => {
   const { needRefresh, updateServiceWorker } = useRegisterSW();
-  const [showReload, setShowReload] = useState(false);
 
   useEffect(() => {
     const autoUpdate = async () => {
       if (localStorage.getItem("pwa-updated") === "true") {
         localStorage.removeItem("pwa-updated");
-        setShowReload(false);
         return;
       }
 
