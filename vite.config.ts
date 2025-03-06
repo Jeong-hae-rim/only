@@ -12,7 +12,6 @@ export default defineConfig({
         clientsClaim: true,
         skipWaiting: true,
       },
-      selfDestroying: true,
       manifest: {
         name: "hoyeol x daeman only festival LOVE&BALL",
         short_name: "LOVE&BALL",
