@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./MbtiGame.css";
 import GAMEBOY from "../assets/images/gameboy.png";
 import { mbtiData } from "../types/type";
+import PWAUpdate from "../func/PWAUdate";
 
 interface Question {
   question: string;
@@ -142,6 +143,7 @@ function MbtiGame() {
 
   return (
     <div className="gameboy-wrapper">
+      <PWAUpdate />
       <div className="gameboy-box">
         <img src={GAMEBOY} className="gameboy-image" />
         {!isStarted ? (
