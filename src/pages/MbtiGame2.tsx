@@ -147,61 +147,62 @@ function MbtiGame() {
 
   return (
     <div className="gameboy-wrapper">
-      <img src={GAMEBOY} className="gameboy-image" />
-
-      {!isStarted ? (
-        // 시작하기 버튼
-        <div className="button-wrapper">
-          <button className="restart gbtn" onClick={startGame}>
-            시작하기
-          </button>
-          <button className="quit gbtn">끝내기</button>
-        </div>
-      ) : (
-        <div className="question-box">
-          {mbtiResult ? (
-            // MBTI 결과 표시
-            <>
-              <div>
-                {mbtiData[mbtiResult]?.image && (
-                  <img
-                    src={mbtiData[mbtiResult].image}
-                    alt={mbtiResult}
-                    className="mbti-image"
-                  />
-                )}
+      <div className="gameboy-box">
+        <img src={GAMEBOY} className="gameboy-image" />
+        {!isStarted ? (
+          // 시작하기 버튼
+          <div className="button-wrapper">
+            <button className="restart gbtn" onClick={startGame}>
+              시작하기
+            </button>
+            <button className="quit gbtn">끝내기</button>
+          </div>
+        ) : (
+          <div className="question-box">
+            {mbtiResult ? (
+              // MBTI 결과 표시
+              <>
+                <div>
+                  {mbtiData[mbtiResult]?.image && (
+                    <img
+                      src={mbtiData[mbtiResult].image}
+                      alt={mbtiResult}
+                      className="mbti-image"
+                    />
+                  )}
+                </div>
+                <div className="result">
+                  <h3>대만이의 🩷 타입은?</h3>
+                  <p className="mbti-name">{mbtiData[mbtiResult]?.name}</p>
+                  <button className="quit gbtn" onClick={restartGame}>
+                    돌아가기
+                  </button>
+                </div>
+              </>
+            ) : (
+              // 질문 표시
+              <div className="option-box">
+                <p className="question">
+                  {questions[currentQuestionIndex].question}
+                </p>
+                <div className="options">
+                  {questions[currentQuestionIndex].options.map(
+                    (option, index) => (
+                      <button
+                        key={index}
+                        className="dm-option gbtn"
+                        onClick={() => handleAnswer(option.value)}
+                      >
+                        {option.text}
+                      </button>
+                    )
+                  )}
+                </div>
               </div>
-              <div className="result">
-                <h3>대만이의 🩷 타입은?</h3>
-                <p className="mbti-name">{mbtiData[mbtiResult]?.name}</p>
-                <button className="quit gbtn" onClick={restartGame}>
-                  돌아가기
-                </button>
-              </div>
-            </>
-          ) : (
-            // 질문 표시
-            <div>
-              <p className="question">
-                {questions[currentQuestionIndex].question}
-              </p>
-              <div className="options">
-                {questions[currentQuestionIndex].options.map(
-                  (option, index) => (
-                    <button
-                      key={index}
-                      className="dm-option gbtn"
-                      onClick={() => handleAnswer(option.value)}
-                    >
-                      {option.text}
-                    </button>
-                  )
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

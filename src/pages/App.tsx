@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import reactLogo from "../assets/loveandball.png";
+import PWAUpdate from "../func/PWAUdate";
 
 function App() {
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="main__container">
+      <PWAUpdate />
       <div>
         <img src={reactLogo} className="logo" alt="React logo" />
       </div>
