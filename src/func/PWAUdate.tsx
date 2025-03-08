@@ -20,7 +20,9 @@ const clearCacheAndReload = async () => {
       localStorage.removeItem("pwa-updated");
 
       // 페이지 강제 새로고침
-      window.location.reload();
+      setTimeout(() => {
+        window.location.reload();
+      }, 300);
     } catch (error) {
       console.error("캐시 삭제 중 오류 발생:", error);
     }
@@ -41,7 +43,7 @@ const PWAUpdate = () => {
         localStorage.setItem("pwa-updated", "true"); // 업데이트 후 플래그 저장
         setTimeout(() => {
           clearCacheAndReload(); // ✅ 캐시 삭제 후 강제 새로고침
-        }, 500);
+        }, 200);
       }
     };
 
