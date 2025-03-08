@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./MbtiGame.css";
-import GAMEBOY from "../assets/images/gameboy.png";
+import GAMEBOY from "../assets/images/hy_gameboy.png";
 import { mbtiData } from "../types/type";
 
 interface Question {
