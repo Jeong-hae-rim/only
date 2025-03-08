@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./MbtiGame.css";
 import GAMEBOY from "../assets/images/dm_gameboy.png";
+import STARTLOGO from "../assets/loveandball.png";
 import DEFAULT_BG from "../assets/images/dm_gameboy/dm_bg_09.gif";
 import BG_01 from "../assets/images/dm_gameboy/dm_bg_01.gif";
 import BG_02 from "../assets/images/dm_gameboy/dm_bg_02.gif";
@@ -176,12 +177,15 @@ function MbtiGame() {
         <img src={GAMEBOY} className="gameboy-image" />
         {!isStarted ? (
           // 시작하기 버튼
-          <div className="button-wrapper">
-            <button className="restart gbtn" onClick={startGame}>
-              시작하기
-            </button>
-            <button className="quit gbtn">끝내기</button>
-          </div>
+          <>
+            <img src={STARTLOGO} className="start-logo" />
+            <div className="button-wrapper">
+              <button className="start gbtn" onClick={startGame}>
+                시작하기
+              </button>
+              <button className="quit gbtn">끝내기</button>
+            </div>
+          </>
         ) : (
           <div className="question-box">
             {mbtiResult ? (
