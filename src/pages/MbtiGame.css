@@ -9,8 +9,8 @@
 
 .gameboy-box {
   position: relative;
-  width: 368px; /* 게임보이 크기 고정 */
-  height: 800px;
+  width: 366px; /* 게임보이 크기 고정 */
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,10 @@
 .gameboy-image {
   width: 100%;
   height: auto;
+}
+
+.gameboy-bg {
+  position: absolute;
 }
 
 .button-wrapper {

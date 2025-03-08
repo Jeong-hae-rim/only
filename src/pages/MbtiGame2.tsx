@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./MbtiGame.css";
-import GAMEBOY from "../assets/images/gameboy2.png";
+import GAMEBOY from "../assets/images/dm_gameboy.png";
+import BASE_BG from "../assets/images/dm_gameboy/dm_bg_09.gif";
 import { mbtiData } from "../types/type";
 
 interface Question {
@@ -148,6 +149,7 @@ function MbtiGame() {
   return (
     <div className="gameboy-wrapper">
       <div className="gameboy-box">
+        <img src={BASE_BG} className="gameboy-bg" />
         <img src={GAMEBOY} className="gameboy-image" />
         {!isStarted ? (
           // 시작하기 버튼
