@@ -1,11 +1,21 @@
 import { useState } from "react";
 import "./MbtiGame.css";
 import GAMEBOY from "../assets/images/hy_gameboy.png";
+import DEFAULT_BG from "../assets/images/dm_gameboy/dm_bg_09.gif";
+import BG_01 from "../assets/images/hy_gameboy/hy_bg_01.gif";
+import BG_02 from "../assets/images/hy_gameboy/hy_bg_02.gif";
+import BG_03 from "../assets/images/hy_gameboy/hy_bg_03.gif";
+import BG_04 from "../assets/images/hy_gameboy/hy_bg_04.gif";
+import BG_05 from "../assets/images/hy_gameboy/hy_bg_05.gif";
+import BG_06 from "../assets/images/hy_gameboy/hy_bg_06.gif";
+import BG_07 from "../assets/images/hy_gameboy/hy_bg_07.gif";
+import BG_08 from "../assets/images/hy_gameboy/hy_bg_08.gif";
 import { mbtiData } from "../types/type";
 
 interface Question {
   question: string;
   options: { text: string; value: string }[];
+  bg: string;
 }
 
 const questions: Question[] = [
@@ -16,6 +26,7 @@ const questions: Question[] = [
       { text: "대만 군, 안녕? 웬일로 먼저 나왔어?", value: "T" },
       { text: "대만 군, 오래 기다렸어? 더 빨리 나올 걸 그랬네...", value: "F" },
     ],
+    bg: BG_01,
   },
   {
     question: "대만 군이 약속을 착각했다고 한다...",
@@ -23,6 +34,7 @@ const questions: Question[] = [
       { text: "바보 같은데 귀엽다.", value: "F" },
       { text: "다리 아플 텐데 들어가서 쉬지.", value: "T" },
     ],
+    bg: BG_02,
   },
   {
     question: "카페에 들어왔다. 같이 앉을 자리는?",
@@ -30,6 +42,7 @@ const questions: Question[] = [
       { text: "창가 쪽 경치를 구경할 수 있는 예쁜 테이블", value: "F" },
       { text: "주변에 사람이 없고 움직이기 편하고 실용적인 자리", value: "T" },
     ],
+    bg: BG_03,
   },
   {
     question: "자리를 골랐다. 음료를 주문하려 하는데, 이때...",
@@ -40,6 +53,7 @@ const questions: Question[] = [
         value: "J",
       },
     ],
+    bg: BG_04,
   },
   {
     question:
@@ -51,6 +65,7 @@ const questions: Question[] = [
         value: "J",
       },
     ],
+    bg: BG_05,
   },
   {
     question: "우여곡절 끝에 자리로 돌아왔다. 대만 군이 갑자기 멋지다고 한다.",
@@ -61,6 +76,7 @@ const questions: Question[] = [
         value: "N",
       },
     ],
+    bg: BG_06,
   },
   {
     question: "대만 군이 갑자기 케이크를 먹여주려고 한다. '아 해봐, 아~'",
@@ -71,6 +87,7 @@ const questions: Question[] = [
         value: "N",
       },
     ],
+    bg: BG_07,
   },
   {
     question: "어찌저찌 마친 카페 데이트! 이젠 고백하고 싶다.",
@@ -81,6 +98,7 @@ const questions: Question[] = [
         value: "J",
       },
     ],
+    bg: BG_08,
   },
 ];
 
@@ -88,6 +106,7 @@ function MbtiGame() {
   const [isStarted, setIsStarted] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
+  const [selectedBg, setSelectedBg] = useState<string>(DEFAULT_BG);
   const [mbtiResult, setMbtiResult] = useState<string | null>(null);
 
   // MBTI 결과 계산
@@ -118,6 +137,7 @@ function MbtiGame() {
   // 버튼 클릭 시 MBTI 테스트 시작
   const startGame = () => {
     setIsStarted(true);
+    setSelectedBg(BG_01);
   };
 
   // 사용자의 선택을 저장하고 다음 질문으로 이동
@@ -125,9 +145,12 @@ function MbtiGame() {
     setAnswers([...answers, value]);
 
     if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      const nextQuestionIndex = currentQuestionIndex + 1;
+      setCurrentQuestionIndex(nextQuestionIndex);
+      setSelectedBg(questions[nextQuestionIndex].bg);
     } else {
       const result = calculateMBTI();
+      setSelectedBg(DEFAULT_BG);
       setMbtiResult(result);
     }
   };
@@ -137,12 +160,14 @@ function MbtiGame() {
     setIsStarted(false);
     setCurrentQuestionIndex(0);
     setAnswers([]);
+    setSelectedBg(DEFAULT_BG);
     setMbtiResult(null);
   };
 
   return (
     <div className="gameboy-wrapper">
       <div className="gameboy-box">
+        <img src={selectedBg} className="gameboy-bg" />
         <img src={GAMEBOY} className="gameboy-image" />
         {!isStarted ? (
           // 시작하기 버튼
@@ -176,24 +201,27 @@ function MbtiGame() {
               </>
             ) : (
               // 질문 표시
-              <div className="option-box">
-                <p className="question">
-                  {questions[currentQuestionIndex].question}
-                </p>
-                <div className="options">
-                  {questions[currentQuestionIndex].options.map(
-                    (option, index) => (
-                      <button
-                        key={index}
-                        className="option gbtn"
-                        onClick={() => handleAnswer(option.value)}
-                      >
-                        {option.text}
-                      </button>
-                    )
-                  )}
+              <>
+                <div className="mbti-image"></div>
+                <div className="option-box">
+                  <p className="question">
+                    {questions[currentQuestionIndex].question}
+                  </p>
+                  <div className="options">
+                    {questions[currentQuestionIndex].options.map(
+                      (option, index) => (
+                        <button
+                          key={index}
+                          className="option gbtn"
+                          onClick={() => handleAnswer(option.value)}
+                        >
+                          {option.text}
+                        </button>
+                      )
+                    )}
+                  </div>
                 </div>
-              </div>
+              </>
             )}
           </div>
         )}
