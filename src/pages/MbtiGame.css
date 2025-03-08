@@ -27,7 +27,7 @@
 
 .button-wrapper {
   position: absolute;
-  top: 50%;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -111,7 +111,7 @@ button:focus:not(:focus-visible) {
 
 .mbti-image {
   width: 120px;
-  height: auto;
+  height: 120px;
   top: 330px;
   left: 50%;
 }

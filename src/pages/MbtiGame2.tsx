@@ -1,12 +1,21 @@
 import { useState } from "react";
 import "./MbtiGame.css";
 import GAMEBOY from "../assets/images/dm_gameboy.png";
-import BASE_BG from "../assets/images/dm_gameboy/dm_bg_09.gif";
+import DEFAULT_BG from "../assets/images/dm_gameboy/dm_bg_09.gif";
+import BG_01 from "../assets/images/dm_gameboy/dm_bg_01.gif";
+import BG_02 from "../assets/images/dm_gameboy/dm_bg_02.gif";
+import BG_03 from "../assets/images/dm_gameboy/dm_bg_03.gif";
+import BG_04 from "../assets/images/dm_gameboy/dm_bg_04.gif";
+import BG_05 from "../assets/images/dm_gameboy/dm_bg_05.gif";
+import BG_06 from "../assets/images/dm_gameboy/dm_bg_06.gif";
+import BG_07 from "../assets/images/dm_gameboy/dm_bg_07.gif";
+import BG_08 from "../assets/images/dm_gameboy/dm_bg_08.gif";
 import { mbtiData } from "../types/type";
 
 interface Question {
   question: string;
   options: { text: string; value: string }[];
+  bg: string;
 }
 
 const questions: Question[] = [
@@ -16,6 +25,7 @@ const questions: Question[] = [
       { text: "그 옷 뭐냐? 평소엔 그렇게 안 입잖아.", value: "T" },
       { text: "어, 그 옷 너한테 잘 어울린다. 멋지네.", value: "F" },
     ],
+    bg: BG_01,
   },
   {
     question: "약속 시간을 착각해 좀 일찍 나왔다 고백했는데 별 말을 안 한다...",
@@ -23,6 +33,7 @@ const questions: Question[] = [
       { text: "(별 생각 없다.)", value: "S" },
       { text: "왜 아무 말도 안 하지? 바보 같다고 생각하나?", value: "F" },
     ],
+    bg: BG_02,
   },
   {
     question: "같이 카페에 들어왔다! 이 때, 정대만의 시선을 사로잡은 건...",
@@ -30,6 +41,7 @@ const questions: Question[] = [
       { text: "이 카페에서만 구경할 수 있을 것 같은 참신한 DP", value: "F" },
       { text: "카페 메뉴판, 그리고 화장실 위치.", value: "T" },
     ],
+    bg: BG_03,
   },
   {
     question: "자리를 고르고 음료를 주문 하려고 하는데, 이때...",
@@ -43,6 +55,7 @@ const questions: Question[] = [
         value: "J",
       },
     ],
+    bg: BG_04,
   },
   {
     question:
@@ -57,6 +70,7 @@ const questions: Question[] = [
         value: "T",
       },
     ],
+    bg: BG_05,
   },
   {
     question: "자리로 돌아왔는데 양호열이 의외로 세심하다고 말한다.",
@@ -67,6 +81,7 @@ const questions: Question[] = [
         value: "N",
       },
     ],
+    bg: BG_06,
   },
   {
     question: "양호열이 민망해 하더니 자기 음료도 마셔보라고 한다.",
@@ -77,6 +92,7 @@ const questions: Question[] = [
         value: "N",
       },
     ],
+    bg: BG_07,
   },
   {
     question: "어찌저찌 마친 카페 데이트! 다음에 또 놀러 나오자고 말하고 싶다.",
@@ -87,12 +103,14 @@ const questions: Question[] = [
         value: "J",
       },
     ],
+    bg: BG_08,
   },
 ];
 
 function MbtiGame() {
   const [isStarted, setIsStarted] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedBg, setSelectedBg] = useState<string>(DEFAULT_BG);
   const [answers, setAnswers] = useState<string[]>([]);
   const [mbtiResult, setMbtiResult] = useState<string | null>(null);
 
@@ -124,6 +142,7 @@ function MbtiGame() {
   // 버튼 클릭 시 MBTI 테스트 시작
   const startGame = () => {
     setIsStarted(true);
+    setSelectedBg(BG_01);
   };
 
   // 사용자의 선택을 저장하고 다음 질문으로 이동
@@ -131,9 +150,12 @@ function MbtiGame() {
     setAnswers([...answers, value]);
 
     if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      const nextQuestionIndex = currentQuestionIndex + 1;
+      setCurrentQuestionIndex(nextQuestionIndex);
+      setSelectedBg(questions[nextQuestionIndex].bg);
     } else {
       const result = calculateMBTI();
+      setSelectedBg(DEFAULT_BG);
       setMbtiResult(result);
     }
   };
@@ -143,13 +165,14 @@ function MbtiGame() {
     setIsStarted(false);
     setCurrentQuestionIndex(0);
     setAnswers([]);
+    setSelectedBg(DEFAULT_BG);
     setMbtiResult(null);
   };
 
   return (
     <div className="gameboy-wrapper">
       <div className="gameboy-box">
-        <img src={BASE_BG} className="gameboy-bg" />
+        <img src={selectedBg} className="gameboy-bg" />
         <img src={GAMEBOY} className="gameboy-image" />
         {!isStarted ? (
           // 시작하기 버튼
@@ -183,24 +206,27 @@ function MbtiGame() {
               </>
             ) : (
               // 질문 표시
-              <div className="option-box">
-                <p className="question">
-                  {questions[currentQuestionIndex].question}
-                </p>
-                <div className="options">
-                  {questions[currentQuestionIndex].options.map(
-                    (option, index) => (
-                      <button
-                        key={index}
-                        className="dm-option gbtn"
-                        onClick={() => handleAnswer(option.value)}
-                      >
-                        {option.text}
-                      </button>
-                    )
-                  )}
+              <>
+                <div className="mbti-image"></div>
+                <div className="option-box">
+                  <p className="question">
+                    {questions[currentQuestionIndex].question}
+                  </p>
+                  <div className="options">
+                    {questions[currentQuestionIndex].options.map(
+                      (option, index) => (
+                        <button
+                          key={index}
+                          className="dm-option gbtn"
+                          onClick={() => handleAnswer(option.value)}
+                        >
+                          {option.text}
+                        </button>
+                      )
+                    )}
+                  </div>
                 </div>
-              </div>
+              </>
             )}
           </div>
         )}
