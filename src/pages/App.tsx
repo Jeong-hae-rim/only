@@ -8,6 +8,10 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    window.location.reload();
+  }, []);
+
+  useEffect(() => {
     document.oncontextmenu = function () {
       return false;
     };
