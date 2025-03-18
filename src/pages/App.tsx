@@ -1,5 +1,4 @@
 import "./App.css";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import reactLogo from "../assets/loveandball.png";
 
