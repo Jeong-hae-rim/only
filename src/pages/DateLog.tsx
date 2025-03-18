@@ -6,6 +6,7 @@ import LOG_FOUR from "../assets/images/date_logs/log4.gif";
 import LOG_FIVE from "../assets/images/date_logs/log5.gif";
 import LOG_SIX from "../assets/images/date_logs/log6.gif";
 import LOG_SEVEN from "../assets/images/date_logs/log7.gif";
+import LOG_EIGHT from "../assets/images/date_logs/log8.gif";
 import YEOL_PROFILE from "../assets/images/yeol-profile.png";
 import DAEM_PROFILE from "../assets/images/daem-profile.png";
 import Header from "../components/Header";
@@ -127,6 +128,31 @@ function DateLog() {
                 <section className="message -right">
                   <div className="nes-balloon from-right">
                     <p>이 자식 날 진짜 고양이로 생각하는 거 아니야?</p>
+                  </div>
+                  <img className="profile dam" src={DAEM_PROFILE} />
+                </section>
+              </div>
+            </div>
+            <div className="log eight">
+              <img className="log-image" src={LOG_EIGHT} />
+              <div className="nes-container with-title message-box">
+                <p className="title">#Log 08 OFF-THE-RECORDS</p>
+                <section className="message -left">
+                  <img className="profile" src={YEOL_PROFILE} />
+                  <div className="nes-balloon from-left">
+                    <p>대만 군! </p>
+                    <p>
+                      남자답게 당당히 주라고! ✨ 포장까지 다 해놓고 내가
+                      몰랐으면 어쩌려고?
+                    </p>
+                  </div>
+                </section>
+                <section className="message -right">
+                  <div className="nes-balloon from-right">
+                    <p>조용히 해, </p>
+                    <p>
+                      너 같음 당당히 줄 수 있겠냐! 그때 진짜 부끄러웠다고! 💢
+                    </p>
                   </div>
                   <img className="profile dam" src={DAEM_PROFILE} />
                 </section>
