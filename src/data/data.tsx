@@ -209,7 +209,7 @@ export const data = [
     title: "사실 너무 부스러웠어요",
     description: "",
     label: "LOVE & BALL",
-    author: ["샤비"],
+    author: ["샤비", "핑구"],
     path: "",
     product: [],
   },
