@@ -5,6 +5,7 @@ import NotFound from "./pages/404";
 import DateLog from "./pages/DateLog";
 import MbtiGame from "./pages/MbtiGame";
 import MbtiGame2 from "./pages/MbtiGame2";
+import YearMemory from "./pages/YearMemory";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
           <Route path="/" element={<App />} />
           <Route path="/love-and-ball" element={<Info />} />
           <Route path="/date-log" element={<DateLog />} />
+          <Route path="/year-memory" element={<YearMemory />} />
           <Route path="/hy-luv-game" element={<MbtiGame />} />
           <Route path="/dm-luv-game" element={<MbtiGame2 />} />
           <Route path="/*" element={<NotFound />} />

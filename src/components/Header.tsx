@@ -18,7 +18,9 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <span> Y</span>EAR LIST_
+          <Link to={"/year-memory"}>
+            <span> Y</span>EAR MEMORY_
+          </Link>
         </li>
         <li>
           <Link to={"/date-log"}>

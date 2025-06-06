@@ -484,3 +484,146 @@ export const data = [
     product: [],
   },
 ];
+
+export const cooperation = [
+  {
+    id: 1,
+    nickname: ".5",
+    x_id: "@coldtomatoooo",
+  },
+  {
+    id: 2,
+    nickname: "KIN",
+    x_id: "@OoOoO_KIN",
+  },
+  {
+    id: 3,
+    nickname: "sam",
+    x_id: "@ssamson_c",
+  },
+  {
+    id: 4,
+    nickname: "woosoo",
+    x_id: "@_woosoo",
+  },
+  {
+    id: 5,
+    nickname: "광부",
+    x_id: "@mitonokoimitsui",
+  },
+  {
+    id: 6,
+    nickname: "구맨",
+    x_id: "@DMR__14",
+  },
+  {
+    id: 7,
+    nickname: "구팔이",
+    x_id: "@SendohAkira76",
+  },
+  {
+    id: 8,
+    nickname: "그린티초코빙수",
+    x_id: "@iceflake_ice",
+  },
+  {
+    id: 9,
+    nickname: "까끼",
+    x_id: "@nene310_522",
+  },
+  {
+    id: 10,
+    nickname: "깡",
+    x_id: "@kxngxdgu",
+  },
+  {
+    id: 11,
+    nickname: "농구맘",
+    x_id: "@jagijudocat",
+  },
+  {
+    id: 12,
+    nickname: "농츠",
+    x_id: "@nongcheu85",
+  },
+  {
+    id: 13,
+    nickname: "덩키",
+    x_id: "@dunkkki",
+  },
+  {
+    id: 14,
+    nickname: "돌저",
+    x_id: "@dolmengeeda",
+  },
+  {
+    id: 15,
+    nickname: "리케",
+    x_id: "@Lykke_838",
+  },
+  {
+    id: 16,
+    nickname: "말랑삶은달걀",
+    x_id: "@pipis0314",
+  },
+  {
+    id: 17,
+    nickname: "불꽃여자",
+    x_id: "@BulkkochYeoja",
+  },
+  {
+    id: 18,
+    nickname: "뺩",
+    x_id: "@right14_luv",
+  },
+  {
+    id: 19,
+    nickname: "삐라",
+    x_id: "@propaganda_sd",
+  },
+  {
+    id: 20,
+    nickname: "와사비빙수",
+    x_id: "@t0kss0m",
+  },
+  {
+    id: 21,
+    nickname: "텍/tact",
+    x_id: "@kerosene_t2",
+  },
+  {
+    id: 22,
+    nickname: "풀먼",
+    x_id: "@Pullman_br",
+  },
+  {
+    id: 23,
+    nickname: "풍뎅이",
+    x_id: "@10beetle10",
+  },
+  {
+    id: 24,
+    nickname: "피톤치드",
+    x_id: "@phytoncide0011",
+  },
+  {
+    id: 25,
+    nickname: "햄엉덩",
+    x_id: "@qhfl_is_GOOD",
+  },
+  {
+    id: 26,
+    nickname: "호팔이",
+    x_id: "@ho___888",
+  },
+  {
+    id: 27,
+    nickname: "익명",
+    x_id: "@",
+  },
+  {
+    id: 28,
+    nickname: "익명",
+    x_id: "@",
+  },
+];
