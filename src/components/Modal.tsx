@@ -13,7 +13,10 @@ const Modal = ({ card, onClose }: any) => {
       <div className="modal-content">
         <div className="modal-wrapper">
           <div className="modal-inner">
-            <img src={card.src} />
+            <div className="modal-img-wrap">
+              <img src={card.src} />
+              <label>{card.label}</label>
+            </div>
             <h2>{card.title}</h2>
             <div className="tags">
               {card.author.map((name: string, index: number) => (

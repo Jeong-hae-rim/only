@@ -90,6 +90,18 @@
   transform: scale(1.1);
 }
 
+.cards__item__pic-wrap label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(70, 184, 255, 0.8); /* 반투명 배경 */
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  pointer-events: none; /* label이 클릭 막지 않게 */
+}
+
 @media (hover: none) and (pointer: coarse) {
   .cards__item__img:active {
     transform: none;

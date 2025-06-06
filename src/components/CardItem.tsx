@@ -17,6 +17,7 @@ function CardItem(props: CardProps & { onClick: () => void }) {
                 alt="Travel Image"
                 src={props.src}
               />
+              <label>{props.label}</label>
             </div>
           </div>
           <div className="cards__item__info">
